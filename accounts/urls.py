@@ -1,7 +1,9 @@
-from django.urls import path
+from django.urls import path,include
 from . import views
 
 urlpatterns = [
+    path('vendor/',include('vendor.urls')),
+    path('',views.myAccount),
     path('registerUser/',views.registerUser,name='registerUser'),
     path('registerVendor/',views.registerVendor,name='registerVendor'),
 

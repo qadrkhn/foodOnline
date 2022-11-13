@@ -1,0 +1,12 @@
+{% autoescape off%}
+
+Hi,{{user.username}},
+
+{% if is_approved %}
+Congratulations. Our admin team has approved your request. Feel free to user your account now.
+{% else %}
+Your request for approval has been denied. Please update your information and try again.
+
+{% endif %}
+
+{% endautoescape %}

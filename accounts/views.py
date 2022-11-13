@@ -11,6 +11,7 @@ from django.core.exceptions import PermissionDenied
 from django.utils.http import urlsafe_base64_decode
 from django.contrib.auth.tokens import default_token_generator
 
+from vendor.models import Vendor
 
 #Custom decorators for restricting access to dashbaords vendor cannot access customer dashboard vice versa.
 
